@@ -32,14 +32,14 @@ plt.scatter(x[:,0], x[:,1], cmap="coolwarm", c=y)
 plt.scatter(
     model.support_vectors_[:,0],    # x좌표
     model.support_vectors_[:,1],    # y좌표
-    s=150,                          # 점 크기
-    facecolors='none',              # 내부는 비움 (투명)
-    edgecolors='k',                 # 테두리 색: 검정
-    label="support vector"          # 범례 이름
+    s=150,
+    facecolors='none',
+    edgecolors='black',
+    label="support vector"
 )
 
-# 결정경계: 서로 다른 클래스(분류 대상)를 구분하는 ‘경계선(혹은 경계면)’
-ax = plt.gca()            # 현재 그래프의 축(Axis) 객체 가져오기
+# 결정경계: 서로 다른 클래스(분류 대상)를 구분하는 경계선(경계면)
+ax = plt.gca()            # 현재 그래프의 축 객체 가져오기
 xlim = ax.get_xlim()      # x축 범위
 ylim = ax.get_ylim()      # y축 범위
 
