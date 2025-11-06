@@ -124,6 +124,8 @@ pred_proba = model.predict_proba(x_test)
 y_score = pred_proba[:, 1]
 # y_score = model.decision_function(x_test)
 
+# 분류기의 임계값(threshold)을 다양하게 바꿔가며,
+# 그때마다의 FPR(위양성률)과 TPR(재현율)을 계산해서 반환
 fpr,tpr,thresholds = roc_curve(y_test,y_score)
 
 # AUC 계산
