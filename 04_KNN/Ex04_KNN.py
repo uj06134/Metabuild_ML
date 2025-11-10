@@ -39,6 +39,8 @@ plt.rc('font', family='malgun Gothic')
 plt.rcParams['axes.unicode_minus'] = False
 plt.scatter(x_test[y_test==0, 0], x_test[y_test==0, 1], color = 'b', label = '정상메일(실제 0)')
 plt.scatter(x_test[y_test==1, 0], x_test[y_test==1, 1], color = 'r', label = '스팸메일(실제 1)')
+error = (y_test != y_pred)
+plt.scatter(x_test[error,0], x_test[error,1], s=100, facecolors='none', edgecolors='k', label='오분류')
 for i in range(len(y_pred2)):
     if y_pred2[i] == 0:
         color = 'g'
