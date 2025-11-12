@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from keras.src.layers import Dense, Input
 from keras import Sequential
 
-dataIn = "../00_data_in/"
+dataIn = "../00_dataIn/"
 filename = dataIn + "surgeryTest.csv"
 data = np.loadtxt(filename, delimiter=",", skiprows=1)
 print('data:',data)

@@ -13,7 +13,7 @@ result2 = okt.morphs("한국어는 주변 언어와 어떤 친족 관계도 밝�
 # print("result2:", result2)
 
 print("--------------------------------")
-df = pd.read_csv("../00_data_in/mailList.csv", encoding="utf-8")
+df = pd.read_csv("../00_dataIn/mailList.csv", encoding="utf-8")
 # print(df.head())
 
 emails = [tuple(row) for row in df.itertuples(index=False)]
@@ -56,7 +56,7 @@ pred = model.predict(x_test)
 print('pred:\n', pred)
 
 print('----------------------------')
-fp = open("../00_data_in/checkedMail.csv", encoding="utf-8")
+fp = open("../00_dataIn/checkedMail.csv", encoding="utf-8")
 new_data = [onemail.strip() for onemail in fp.readlines()]
 print(new_data)
 

@@ -1,7 +1,7 @@
 from sklearn.feature_extraction.text import CountVectorizer
 
 words = []
-with open('../00_data_in/text01.txt', 'r' ,encoding='utf-8') as f:
+with open('../00_dataIn/text01.txt', 'r' , encoding='utf-8') as f:
     for line in f:
         words.append(line.strip())
 

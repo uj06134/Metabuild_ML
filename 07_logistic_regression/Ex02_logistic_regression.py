@@ -23,7 +23,7 @@ from sklearn.model_selection import train_test_split
 # 18    CLASS    예측 대상: 수술 후 결과 (0 = 생존, 1 = 사망)    int    0
 
 
-dataIn = "../00_data_in/"
+dataIn = "../00_dataIn/"
 filename = dataIn + "surgeryTest.csv"
 data = np.loadtxt(filename, delimiter=",", skiprows=1)
 print('data:',data)

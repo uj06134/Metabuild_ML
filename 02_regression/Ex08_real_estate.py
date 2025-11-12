@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv("../00_data_in/서울시 부동산 실거래가 정보.csv", encoding="UTF-8")
+df = pd.read_csv("../00_dataIn/서울시 부동산 실거래가 정보.csv", encoding="UTF-8")
 print(df.head(5))
 print(df.columns)
 df.dropna(inplace=True)

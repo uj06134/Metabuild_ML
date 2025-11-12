@@ -24,7 +24,7 @@ from sklearn.svm import SVC
 df = sns.load_dataset('titanic')
 print(df)
 
-df.to_csv('../00_data_out/titanic.csv', index=False)
+df.to_csv('../00_dataOut/titanic.csv', index=False)
 
 # 컬럼 이름 변경
 rdf = df.rename(columns={'sex':'gender'})
